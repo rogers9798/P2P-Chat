@@ -48,10 +48,6 @@ app.use(express.static(__dirname + '/scripts'))
 
 app.use('/p2pServer', peerserver);
 
-app.get('/p2p', (req, res) => {
-    res.render('temp.hbs', { users })
-})
-
 app.get('/p2pChat', (req, res) => {
     res.render('index.hbs');
 })

@@ -33,7 +33,14 @@ The aim of the project is to develop a multi-purpose ​ Web application​ base
 * Navigate to the project's main directory and install dependencies(node-modules) using running `npm i ` in your terminal. 
 
 * ### For P2P Chat App (Text and Video) : 
-
+    
+    * Run `node server.js` in your command line. The application will start on localhost and port, which will be shown in console.
+    * Now open your browser and enter `localhost:3000/p2pChat` , or with the port specified in the console, in the address bar. Chat Apllication Login page will be rendered now.
+    * On the bottom-left side of your screen, a list of currently online users will be rendered, from which you have to copy any peerID and paste into `Peer ID to Connect With:` input field.
+    * Now press `connect`, your will be connected to the peer whose ID you have enetered and can now send messages to the other peer. **Note that**, the other peer will also have to connect with you in the same manner to send text.
+    * For *VideoChat*, you have to click the `Start Video Chat` button, given there is a PeerID enetered by you in the `Peer ID to Connect With:` field.
+    * After a succeful connection, the connected peer will be able to see your meadia stream, and will have to repeat the same step to send its *media stream* to you.
+    * *Errors* due to any issues will be reported to the clients.
 
 * ### For P2P File Transfer :
 
