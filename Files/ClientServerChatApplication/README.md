@@ -1,2 +1,0 @@
-# ComputerNetworksProject
-Academic Project | ComputerNetworks

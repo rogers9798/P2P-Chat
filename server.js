@@ -8,7 +8,7 @@ const ExpressPeerServer = require('peer').ExpressPeerServer;
 
 const PORT = process.env.PORT || 3000;
 
-var server = app.listen(PORT,()=>{console.log(`Server started at port ${PORT}`);})
+var server = app.listen(PORT,()=>{console.log(`Application started at port ${PORT}`);})
 
 // configuring server for socket.IO
 var io = require('socket.io').listen(server)
