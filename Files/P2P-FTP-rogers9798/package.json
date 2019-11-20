@@ -1,0 +1,11 @@
+{
+    "name": "p2p",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "crypto": "^1.0.1",
+        "express": "^4.17.1",
+        "pug": "^2.0.4",
+        "socket.io": "^2.3.0"
+    }
+}
