@@ -118,9 +118,6 @@ io.on('connection', (socket) => {
         }
         console.log("Object at serevr ->", obj)
         listOfUsers.push(obj)
-        // usersockets[data.user] = socket.id
-        // // console.log(typeof (usersockets));   console.log(usersockets)
-
 
         io.emit('alertAllAboutNewUser', {
             list: listOfUsers
@@ -131,8 +128,6 @@ io.on('connection', (socket) => {
     // When a scket/ Peer is being disconnected
     socket.on('disconnect', (reason) => {
         console.log('user disconnected, socketID : ', socket.id);
-
-        // joGyaUskiId = socket.id;
 
         listOfUsers = listOfUsers.filter(obj => obj.socketId == socket.id)
         console.log(listOfUsers)
