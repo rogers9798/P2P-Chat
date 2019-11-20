@@ -1,4 +1,4 @@
-let socket = io()
+let socket = io();
 
 socket.on('connected', () => {
     console.log("Socket ID :", socket.id)
@@ -246,14 +246,16 @@ $(() => {
     let vChatWindow = $('#vChatWindow');
     let vChatend = $('#vChatend');
 
-
-
     // Creating a new Peer for local machine
     var peer = new Peer({
-        host: location.hostname,
-        port: 3000,
-        path: '/p2pServer',
     });
+
+    // // Creating a new Peer for local machine
+    // var peer = new Peer({
+    //     host: location.hostname,
+    //     port: 3000,
+    //     path: '/p2pServer',
+    // });
 
 
     // configuring PeerJSServer on Heroku
