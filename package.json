@@ -20,7 +20,7 @@
     "morgan": "^1.9.1",
     "peer": "^0.2.10",
     "pug": "^2.0.4",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "bugs": {
     "url": "https://github.com/vmanav/ComputerNetworksProject/issues"
